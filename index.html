@@ -1,0 +1,120 @@
+<<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Be My Valentine?</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+            background-color: pink;
+        }
+        img {
+            width: 300px;
+            border-radius: 10px;
+            margin: 20px;
+        }
+        .button-container {
+            margin-top: 20px;
+        }
+        button {
+            font-size: 20px;
+            padding: 10px 20px;
+            margin: 10px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+        }
+        .yes-button {
+            background-color: red;
+            color: white;
+            font-size: 20px;
+        }
+        .no-button {
+            background-color: gray;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Will you be my valentine?</h1>
+    <img src="IMG_8036.jpg" alt="Funny Cat">
+    <div class="button-container">
+        <button class="yes-button" onclick="window.location.href='food.html'">Yes</button>
+        <button class="no-button" onclick="makeYesBigger()">No</button>
+    </div>
+    
+    <script>
+        let yesButton = document.querySelector('.yes-button');
+        let size = 20;
+        
+        function makeYesBigger() {
+            size += 10;
+            yesButton.style.fontSize = size + 'px';
+        }
+    </script>
+</body>
+</html>
+
+<!-- food.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What to Eat?</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+            background-color: lightyellow;
+        }
+        .button-container {
+            margin-top: 20px;
+        }
+        button {
+            font-size: 20px;
+            padding: 10px 20px;
+            margin: 10px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>What would you like to eat?</h1>
+    <div class="button-container">
+        <button onclick="alert('Try again! Pick the right one!')">Japanese</button>
+        <button onclick="alert('Try again! Pick the right one!')">Italian</button>
+        <button onclick="window.location.href='final.html'">Laos</button>
+    </div>
+</body>
+</html>
+
+<!-- final.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yipee!</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+            background-color: lightblue;
+        }
+        img {
+            width: 300px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Yipee!</h1>
+    <img src="cat-heart.gif" alt="Happy Cat">
+</body>
+</html>
